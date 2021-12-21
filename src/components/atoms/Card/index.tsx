@@ -1,7 +1,8 @@
+import { CardProps } from "@/types/CardTypes";
 import styles from "./card.module.scss";
 
-const Card = () => {
-  return <div className={styles.card}>I&apos;m a Card.</div>;
+const Card: React.FC<CardProps> = ({ children, className = "" }) => {
+  return <div className={`${styles.card} ${className}`}>{children}</div>;
 };
 
 export default Card;

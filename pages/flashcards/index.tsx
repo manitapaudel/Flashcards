@@ -1,9 +1,7 @@
-import Card from "@/components/atoms/Card"
+import FlashCards from "@/components/pages/flashcards";
 
 const Index = () => {
-  return <div >Hello flashcard!!
-    <Card />
-  </div>;
+  return <FlashCards />;
 };
 
 export default Index;
