@@ -5,7 +5,7 @@ const Card: React.FC<CardProps> = ({ children, className = "", openCard }) => {
   return (
     <div
       className={`${Style.card} ${
-        !openCard ? Style.questionCard : ""
+        !openCard ? Style.questionCard : Style.answerCard
       } ${className}`}
     >
       <div className={Style.innerCard}>{children}</div>

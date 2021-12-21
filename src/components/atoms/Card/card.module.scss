@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap");
 
+@keyframes flip {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .questionCard {
   opacity: 0.8;
   background: repeating-linear-gradient(
@@ -13,6 +21,11 @@
   .innerCard {
     border: 5px solid #b08f26;
   }
+}
+.answerCard {
+  color: #b76e79;
+  animation-name: flip;
+  animation-duration: 0.7s;
 }
 .card {
   font-family: "Roboto Mono", monospace;
