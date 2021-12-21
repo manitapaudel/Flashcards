@@ -1,8 +1,33 @@
 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px 16px;
+  min-height: 400px;
+  width: 60%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: white; //pattern generated from https://www.magicpattern.design/ will give credit
+  opacity: 0.8;
+  background: repeating-linear-gradient(
+    45deg,
+    #b08f26,
+    #b08f26 4px,
+    white 4px,
+    white 25px
+  );
+
+  .innerCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #b08f26;
+    border-radius: 4px;
     background-color: white;
-    border: 10px solid #B76E79;
-    border-radius: 6px;
     padding: 10px 16px;
     min-height: 200px;
-    width: 40%
+    width: 60%;
+  }
 }

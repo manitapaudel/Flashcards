@@ -1,5 +1,5 @@
 
 export type TypographyProps = {
-    children: string;
+    children: string ;
     className?: string | object;
 }

@@ -1,8 +1,14 @@
 import { CardProps } from "@/types/CardTypes";
-import styles from "./card.module.scss";
+import Style from "./card.module.scss";
 
 const Card: React.FC<CardProps> = ({ children, className = "" }) => {
-  return <div className={`${styles.card} ${className}`}>{children}</div>;
+  return (
+    <div className={`${Style.card} ${className}`}>
+      <div className={Style.innerCard}>
+        {children}
+        </div>
+    </div>
+  );
 };
 
 export default Card;
