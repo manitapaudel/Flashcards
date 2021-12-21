@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <div className={Style.container}>
       <H1>Flashcards</H1>
-      <Card className={Style.card}>
+      <Card className={Style.card} openCard={openCard}>
         <H2>{openCard ? "I am the Answer" : "I am a Question"}</H2>
       </Card>
       <div className={Style.buttonsSection}>
