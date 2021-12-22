@@ -2,10 +2,10 @@
 
 @keyframes flip {
   0% {
-    transform: rotate(0);
+    transform: rotateY(0);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotateY(180deg);
   }
 }
 .questionCard {
@@ -25,7 +25,7 @@
 .answerCard {
   color: #b76e79;
   animation-name: flip;
-  animation-duration: 0.7s;
+  animation-duration: 0.5s;
 }
 .card {
   font-family: "Roboto Mono", monospace;
