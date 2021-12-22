@@ -1,7 +1,16 @@
-import styles from "./card.module.scss";
+import { CardProps } from "@/types/CardTypes";
+import Style from "./card.module.scss";
 
-const Card = () => {
-  return <div className={styles.card}>I&apos;m a Card.</div>;
+const Card: React.FC<CardProps> = ({ children, className = "", openCard }) => {
+  return (
+    <div
+      className={`${Style.card} ${
+        !openCard ? Style.questionCard : Style.answerCard
+      } ${className}`}
+    >
+      <div className={Style.innerCard}>{children}</div>
+    </div>
+  );
 };
 
 export default Card;
