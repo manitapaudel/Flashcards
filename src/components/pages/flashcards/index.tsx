@@ -1,7 +1,8 @@
 import React from "react";
+
 import Card from "@/components/atoms/Card";
 import { H1, H2 } from "@/components/atoms/Typography";
-
+import StyledButton from "@/components/atoms/Button/StyledButton";
 import Style from "./flashcards.module.scss";
 
 const Index = () => {
@@ -13,14 +14,13 @@ const Index = () => {
         <H2>{openCard ? "I am the Answer" : "I am a Question"}</H2>
       </Card>
       <div className={Style.buttonsSection}>
-        <button>Previous</button>
-        <button
-          onClick={() => {
+        <StyledButton primary >Previous</StyledButton>
+        <button onClick={() => {
             setOpenCard(!openCard);
           }}
           // className={Style.button}
         >
-          {openCard ? "Go Back" : "Show Answer"}
+          {openCard ? "Hide Answer" : "Show Answer"}
         </button>
         <button>Next</button>
       </div>
